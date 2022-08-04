@@ -19,6 +19,7 @@ export class AddTaskComponent implements OnInit {
   onSubmit() {
     if (!this.text) {
       alert('Please add text for a task');
+      return;
     }
 
     const newTask: Task = {
